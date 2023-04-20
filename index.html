@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario a JSON</title>
+    <!-- Estilos bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="d-flex flex-column justify-content-center align-items-center">
+        <h1>Complete los siguientes campos:</h1>
+        <form class="font align-text-bottom">
+
+            <label for="nombre">NOMBRE:</label><br />
+            <input id="nombre" type="text" placeholder="Nombre" /><br />
+
+            <label for="apellido">APELLIDO:</label><br />
+            <input id="apellido" type="text" placeholder="Apellido" /><br />
+
+            <label for="aspiracion">ASPIRACION SALARIAL:</label><br />
+            <input id="aspiracion" type="text" placeholder="Aspiracion salarial" /><br />
+
+            <label for="correo">CORREO ELECTRONICO:</label><br />
+            <input id="correo" type="text" placeholder="Correo electrónico" /><br />
+
+            <label for="genero">GENERO:</label><br />
+            <input id="genero" type="text" placeholder="genero" /><br />
+
+            <!-- <label for="cargo">CARGO A OCUPAR:</label><br />
+                <input id="cargo" type="text" placeholder="Cargo a ocupar" /><br /> -->
+
+            <label for="cargo">CARGO A OCUPAR:</label><br />
+            <select class="form-select" id="cargo" aria-label=".form-select-lg example">
+                <option selected>Seleccione:</option>
+                <option value="1">Desarrollador</option>
+                <option value="2">Gerente de proyecto</option>
+                <option value="3">Líder administrativo</option>
+                <option value="4">Conductor</option>
+                <option value="5">Otro</option>
+
+            </select>
+            <!-- <input class="btn btn-light btnIngresar mx-auto ms-5" type="submit" value="Ingresar" onclick="crearJson()" /> -->
+        </form>
+        <button class="btn btn-light btnIngresar mx-auto ms-5" type="submit" value="Ingresar"
+                onclick="crearJson()">Ingresar</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
