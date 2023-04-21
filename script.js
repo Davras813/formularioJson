@@ -18,5 +18,12 @@ function crearJson(){
     }
 
     bd.push(obj)
+    let lista= localStorage.getItem('key');
+    let db=lista ? JSON.parse(lista):[];
+
+    db=[...db, obj];
+    
+    localStorage.setItem('key', JSON.stringify(db))
     console.log(bd)
+
 }
